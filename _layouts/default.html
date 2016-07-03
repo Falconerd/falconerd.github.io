@@ -19,7 +19,13 @@
   <article>
    <div class="container">
     <h1><a href="./">{{ site.tag_text }}</a></h1>
-    {{ content }}
+    <ul class="post">
+    {% for item in site.texts do %}
+      <li class="post-title">
+        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
     </div>
   </article>
 <script src="{{ site.baseurl }}/scripts/rrssb.min.js"></script>
