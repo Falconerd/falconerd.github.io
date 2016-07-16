@@ -26,6 +26,11 @@
       </li>
     {% endfor %}
     </ul>
+    <ul>
+      {% for item in site.articles %}
+      <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a.</li>
+      {% endfor %}
+    </ul>
     </div>
   </article>
 <script src="{{ site.baseurl }}/scripts/rrssb.min.js"></script>

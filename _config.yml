@@ -15,3 +15,5 @@ exclude: ["README.md"]
 collections:
   texts:
     output: true
+  articles:
+    output: true
